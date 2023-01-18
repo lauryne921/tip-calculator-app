@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.google.com/specimen/Space+Mono">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="title">
+      <h1>S P L I</h1>
+      <h2>T T E R</h2>
+    </section>
+    <section class="content">
+      <div class="div-content-left">
+        <div class="div-bill">
+          <label for="bill" class="bill">Bill</label>
+          <input type="text" id="bill" name="bill" dir="rtl" value="">
+        </div>
+        <div class="=div-tip">
+          <div class="div-label-tip">
+            <label for="tip" class="tip">Select Tip %</label>
+          </div>
+          <div class="first-input">
+            <input type="radio" class="btn-number" value="0.05" name="btn-number" id="one" /><label for="one" class="btn-label">5%</label>
+            <input type="radio" class="btn-number" value="0.10" name="btn-number" id="two" /><label for="two" class="btn-label">10%</label>
+            <input type="radio" class="btn-number" value="0.15" name="btn-number" id="three" /><label for="three" class="btn-label">15%</label>
+          </div>
+          <div class="second-input">
+            <input type="radio" class="btn-number" value="0.25" name="btn-number" id="four" /><label for="four" class="btn-label">25%</label>
+            <input type="radio" class="btn-number" value="0.5" name="btn-number" id="five" /><label for="five" class="btn-label">50%</label>
+            <input type="text" class="input-tip input-label-tip6 input-label-tip" name="input-tip" id="tipCustom" placeholder="Custom" dir="rtl" value="">
+          </div>
+        </div>
+        <div class="div-number-people">
+          <label for="people" class="label-people">Number of people</label>
+          <div id="div-zero"></div>
+          <input type="text" name="people" id="people" placeholder="0" dir="rtl" value="">
+        </div>
+      </div>
+      <div class="div-content-right">
+        <div class="div-amount">
+          <div class="text">
+            <label for="amount" class="label-amount">Tip Amount</label>
+            <p>/ person</p>
+          </div>
+          <input type="number" name="amount" id="amount" placeholder="$0.00" class="amount" value="" readonly><label
+            for="amount" id="amount-label"></label>
+        </div>
+        <div class="div-total">
+          <div class="text">
+            <label for="total" class="label-total">Total</label>
+            <p>/ person</p>
+          </div>
+          <input type="number" name="total" id="total" placeholder="$0.00" class="total" readonly><label for="total"
+            id="total-label"></label>
+        </div>
+        <div class="div-button">
+          <button type="submit" id="btn-submit" class="submit" onclick="total();">C A L C U L</button>
+          <button id="btn-reset" class="reset">R E S E T</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://laurynetranchant.com/">Lauryne</a>.
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
